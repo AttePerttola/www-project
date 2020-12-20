@@ -70,7 +70,7 @@ class App extends React.Component {
                 <h1>ScuffedLauta</h1>
                 <div className='messageBoard'>
                     <form className='submit' onSubmit={this.addMessage}>
-                        <label for='msg'>Message:</label><br/>
+                        <label htmlFor='msg'>Message:</label><br/>
                         <input
                             type = 'text'
                             name = 'msg'
@@ -78,7 +78,7 @@ class App extends React.Component {
                             value={this.state.newMessage}
                             onChange={this.handleMessageChange}
                         /><br/>
-                        <label for='author'>Username:</label><br/>
+                        <label htmlFor='author'>Username:</label><br/>
                         <input
                             type = 'text'
                             name = 'author'
