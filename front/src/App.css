@@ -1,0 +1,39 @@
+h1 {
+  font-family: sans-serif;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.messageBoard {
+  font-family: sans-serif;
+  text-align: center;
+  
+}
+
+.submit {
+  text-align: left;
+  margin-left: 20px;
+  gap: 10px;
+}
+
+input {
+  margin: 5px;
+  margin-left: 0;
+}
+
+.messageBox {
+  display: grid;
+  gap: 10px;
+  padding:20px;
+  max-width: 200px;
+}
+
+/*resizing the grid for different sizes of screen */
+@media (min-width: 500px) {
+  .messageBox { grid-template-columns: repeat(2, 200px);}
+}
+
+@media (min-width: 700px) {
+  .messageBox { grid-template-columns: repeat(3, 200px);}
+}
+
